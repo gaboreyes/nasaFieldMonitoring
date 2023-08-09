@@ -22,7 +22,7 @@ You will need a [Sentinel Hub](https://apps.sentinel-hub.com/dashboard/#/) accou
 ```bash
 python main.py
 ```
-
+Note that inside the project at root level you have ```dummyLocations.csv``` this is the default file used for getting the coordinates for the images, if you want to use a different set, add your file to the project at root level and update the value for ```csv_file_path``` inside the env file accordingly. 
 ### Running tests
 
 ```bash
