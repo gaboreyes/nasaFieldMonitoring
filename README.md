@@ -26,7 +26,7 @@ Note that inside the project at root level you have ```dummyLocations.csv``` thi
 ### Running tests
 
 ```bash
-TODO
+python -m unittest discover
 ```
 
 * * *
