@@ -1,5 +1,6 @@
 FROM python:3.11.4-alpine
 
+# TODO: Make the Dockerfile populate variables from the .env file
 ENV AWS_ACCESS_KEY_ID=''
 ENV AWS_SECRET_ACCESS_KEY=''
 ENV BUCKET_NAME=''

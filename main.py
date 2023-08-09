@@ -8,9 +8,7 @@ from src.save_to_s3 import save_images_to_s3
 from src.clear_from_local import clear_from_local
 from dotenv import load_dotenv
 
-
 load_dotenv()
-
 
 def create_img_directory():
   cwd = os.getcwd()
@@ -41,7 +39,6 @@ def main():
 
 if __name__ == "__main__":
   main()
-
 
 
 """
