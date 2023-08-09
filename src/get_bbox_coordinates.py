@@ -15,7 +15,6 @@ def get_bbox_coordinates(csv_output):
   for line in csv_output:
     first_point = {}
     second_point = {}
-
     if(i == False ):
       i = True
       continue

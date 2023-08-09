@@ -19,7 +19,6 @@ def create_img_directory():
 
 
 def read_csv():
-  # Assume that the fields' location is stored in a csv file with the format: field_id, lat, lon, dim (width and height of field in degrees).
   csv_file = open(getenv('csv_file_path'), "r")
   return csv_file
   
@@ -36,7 +35,8 @@ def main():
     for i in range(len(fetched_images)):
       save_to_local(fetched_images[i], bbox_array[i]['field_id'], cwd)
 
-    save_images_to_s3(cwd, bbox_array)
+    s3_upload_result = save_images_to_s3(cwd, bbox_array)
+    print(s3_upload_result)
   except:
     e = sys.exc_info()[0]
     print(e)

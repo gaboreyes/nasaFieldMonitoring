@@ -22,5 +22,5 @@ def save_images_to_s3(cwd, bbox_array):
     with open(f"{path}/{files_array[i]}", "rb") as image:
       bytes = bytearray(image.read())
       s3.put_object(Bucket=BUCKET_NAME, Key=f"{field_id}/{files_array[i][1:]}", Body=bytes)
-  print('Saved to s3 successfully')
+  return(f'Saved {len(files_array)} images to s3 successfully')
       
