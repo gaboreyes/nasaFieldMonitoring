@@ -15,6 +15,8 @@ In here you will have to add values for the environment variables.
 
 You will need a [Sentinel Hub](https://apps.sentinel-hub.com/dashboard/#/) account in order to use the OGC API. Once registered in the "Configuration Utility" tab you will find your api key. 
 
+Also you'll find a Dockerfile, if you are going to spin up a Docker image it will need you to add the values for the .env variables. 
+
 ## Scripts
 
 ### Running the script
